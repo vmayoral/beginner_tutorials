@@ -15,9 +15,9 @@ USAGE
 * Set up an Angstrom distribution in your embedded platform. Some basic instructions about how to do to accomplish this are given at the `README.md`
 of https://github.com/vmayoral/beagle-ros.
 
-* `git clone` the beagle-ros project (https://github.com/vmayoral/beagle-ros.git) at the `sources/` directory of your Angstrom installation.
+* `git clone` the beagle-ros project (https://github.com/vmayoral/beagle-ros.git) in some place such as `/tmp`
 
-* Add the beagle-ros package to the Angstrom packages (COMPLETE)
+* add `recipes/*` to the `meta-ros/recipes-ros/`: `cp -r /path/to/beagle-ros/recipes/* /path/to/meta-ros/recipes-ros/`
 
 * `bitbake beginner_tutorials` to create an ipkg of the ROS package.
 
@@ -33,9 +33,10 @@ of https://github.com/vmayoral/beagle-ros.
 
 * Upload the code of the package to a github repository
 
-* Create a bitbake recipe such as the one provided for this example available at https://github.com/vmayoral/beagle-ros/blob/master/recipes/beginner-tutorials_git.bb
+* Create a bitbake recipe such as the one provided for this example available at https://github.com/vmayoral/beagle-ros/blob/master/recipes/beginner-tutorials/beginner-tutorials_git.bb
 
-* COMPLETE
+* TODO
+
 LICENSE
 =======
 
