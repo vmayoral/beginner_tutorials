@@ -92,7 +92,7 @@ include_directories(include
 # in contrast to setup.py, you can choose the destination
  install(PROGRAMS
    scripts/talker.py
-   scripts/listerner.py
+   scripts/listener.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
