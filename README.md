@@ -1,4 +1,4 @@
-BEGINNER_TUTORIA
+BEGINNER TUTORIAL
 ==================
 
 *The aim of this respository is to provide a simple example (talker/listener) about how to 
@@ -12,16 +12,20 @@ that uses the meta-ros project (https://github.com/bmwcarit/meta-ros).
 USAGE
 =====
 
+The easiest way to use the code is to get the code `git clone https://github.com/vmayoral/beginner_tutorials.git` and the install the through `opkg install beginner_tutorials/ipkg/beginner_tutorials*.ipkg`.
+
+An alternative method is to cross-compile the code by yourself following these instructions:
+
 * Set up an Angstrom distribution in your embedded platform. Some basic instructions about how to do to accomplish this are given at the `README.md`
 of https://github.com/vmayoral/beagle-ros.
 
 * `git clone` the beagle-ros project (https://github.com/vmayoral/beagle-ros.git) in some place such as `/tmp`
 
-* add `recipes/*` to the `meta-ros/recipes-ros/`: `cp -r /path/to/beagle-ros/recipes/* /path/to/meta-ros/recipes-ros/`
+* add `recipes/*` to the `meta-ros/recipes-ros/`: `cp -r /path/to/beagle-ros/recipes/* /path/to/meta-ros/recipes-ros/`. This step adds the recipe required to cross-compile this code inside of the meta-ros code structure.
 
 * `bitbake beginner_tutorials` to create an ipkg of the ROS package.
 
-* copy `beginner_tutorials*.ipkg` to your embedded platform and install it using `opkg install beginner_tutorials*.ipkg`
+* copy `/path/to/the/package/beginner_tutorials*.ipkg` to your embedded platform and install it using `opkg install beginner_tutorials*.ipkg`
 
 HOW TO REPLICATE
 ===================
@@ -31,11 +35,15 @@ of https://github.com/vmayoral/beagle-ros.
 
 * Create a ROS package the usual way (`catkin_create_pkg`).
 
-* Upload the code of the package to a github repository
+* Edit the CMakeLists so that it'll deploy files according to your needs (check http://ros.org/wiki/catkin/CMakeLists.txt).
+
+* Upload the code of the package to a github repository.
 
 * Create a bitbake recipe such as the one provided for this example available at https://github.com/vmayoral/beagle-ros/blob/master/recipes/beginner-tutorials/beginner-tutorials_git.bb
 
-* TODO
+* Put the recipe in the meta-ros file structure (check USAGE instructions for an example)
+
+* cross-compile and install the package as explained in the USAGE section 
 
 LICENSE
 =======
