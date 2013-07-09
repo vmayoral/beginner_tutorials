@@ -1,4 +1,4 @@
-BEGINNER_TUTORIAL
+BEGINNER_TUTORIA
 ==================
 
 *The aim of this respository is to provide a simple example (talker/listener) about how to 
