@@ -37,6 +37,9 @@ find_package(catkin REQUIRED COMPONENTS roscpp rospy std_msgs message_generation
    std_msgs
  )
 
+
+catkin_package()
+
 ###################################
 ## catkin specific configuration ##
 ###################################
