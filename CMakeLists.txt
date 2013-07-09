@@ -71,7 +71,7 @@ include_directories(include
 ## Declare a cpp executable
 # add_executable(beginner_tutorials_node src/beginner_tutorials_node.cpp)
 
-add_executable(beginner_tutorials_talker scripts/talker.py)
+add_executable(talker.py scripts/talker.py)
 
 
 ## Add cmake target dependencies of the executable/library
