@@ -27,6 +27,8 @@ of https://github.com/vmayoral/beagle-ros.
 
 * copy `/path/to/the/package/beginner_tutorials*.ipkg` to your embedded platform and install it using `opkg install beginner_tutorials*.ipkg`
 
+* run the package using `rosrun beginner_tutorials talker.py` or `rosrun beginner_tutorials listerner.py`
+
 HOW TO REPLICATE
 ===================
 
