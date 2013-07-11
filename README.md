@@ -9,10 +9,17 @@ The code illustrates how to create a simple talker/listener ros package written 
 The package will be cross-compiled using bitbake and deployed in an embedded system
 that uses the meta-ros project (https://github.com/bmwcarit/meta-ros).
 
+CROSS COMPILATION
+=================
+
+Recipes are available at https://github.com/vmayoral/beagle-ros/tree/master/recipes.
+
+
+
 USAGE
 =====
 
-The easiest way to use the code is to get the code `git clone https://github.com/vmayoral/beginner_tutorials.git` and the install the through `opkg install beginner_tutorials/ipkg/beginner_tutorials*.ipkg`.
+The easiest way to use the code is to get the code `git clone https://github.com/vmayoral/beginner_tutorials.git` and the install the through `opkg install beginner_tutorials/ipkg/beginner_tutorials*.ipkg`. (This has been compiled for the **beaglebone** in the Angstrom distribution)
 
 An alternative method is to cross-compile the code by yourself following these instructions:
 
