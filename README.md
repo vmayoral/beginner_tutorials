@@ -54,6 +54,11 @@ of https://github.com/vmayoral/beagle-ros.
 
 * cross-compile and install the package as explained in the USAGE section 
 
+
+NEXT STEPS
+=======
+Try the [ros-tutorials](https://github.com/vmayoral/beagle-ros/tree/master/recipes) recipes.
+
 LICENSE
 =======
 
